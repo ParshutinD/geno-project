@@ -1,0 +1,53 @@
+.breadcrumbs-list {
+  padding-top: 32px;
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  overflow: scroll;
+  overflow: hidden;
+  padding-bottom: 0;
+
+  @include sm-block {
+    font-size: 14px;
+    padding-top: 0;
+  }
+}
+
+.breadcrumbs__item {
+  position: relative;
+
+  @include sm-block {
+    padding-bottom: 10px;
+  }
+}
+
+.breadcrumbs__item:not(:first-of-type)::before {
+  content: "/";
+  position: absolute;
+  top: 0;
+  left: -13px;
+  color: #161820;
+}
+
+.breadcrumbs__item:not(:last-child) {
+  padding-right: 22px;
+
+  & a {
+    color: $color_secondary;
+    text-decoration: underline;
+  }
+}
+
+.breadcrumbs {
+  padding-bottom: 0;
+
+  .breadcrumbs-list {
+    padding-bottom: 24px;
+
+    @include sm-block {
+      padding-bottom: 44px;
+    }
+  }
+}

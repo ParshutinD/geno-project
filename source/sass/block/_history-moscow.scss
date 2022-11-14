@@ -1,0 +1,30 @@
+.history-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-bottom: 32px;
+
+  @include lg-block {
+    justify-content: center;
+  }
+
+  img {
+    padding-bottom: 16px;
+  }
+}
+
+.history__discription {
+  line-height: 140%;
+  max-width: 220px;
+}
+
+.history-moscow {
+  padding-bottom: 84px;
+  @include sm-block {
+    padding-bottom: 44px;
+  }
+  button {
+    display: block;
+    margin: 0 auto;
+  }
+}

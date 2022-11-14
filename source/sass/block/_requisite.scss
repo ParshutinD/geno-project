@@ -1,0 +1,31 @@
+.requisite__wrapper {
+  display: flex;
+  gap: 123px;
+
+  @include md-block {
+    flex-direction: column;
+  }
+}
+
+.requisite__migi-title,
+.requisite__riso-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 160%;
+  padding-bottom: 16px;
+}
+
+.requisite__list {
+  padding-bottom: 32px;
+  .requisite__item:not(:last-child) {
+    padding-bottom: 5px;
+  }
+}
+
+.requisite__info {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 160%;
+}

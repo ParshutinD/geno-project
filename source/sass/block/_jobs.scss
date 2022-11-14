@@ -1,0 +1,82 @@
+.jobs__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 110%;
+  margin: 0;
+  padding-bottom: 32px;
+  @include sm-block {
+    font-size: 28px;
+    line-height: 115%;
+    padding-bottom: 24px;
+  }
+}
+
+.jobs__info {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  padding-bottom: 32px;
+
+  span {
+    color: $color_secondary;
+  }
+
+  @include sm-block {
+    font-size: 16px;
+    line-height: 120%;
+    padding-bottom: 18px;
+  }
+}
+
+.jobs {
+  h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    color: $color_secondary;
+    padding-bottom: 16px;
+
+    @include sm-block {
+      font-size: 18px;
+      line-height: 100%;
+    }
+  }
+}
+
+.jobs__discription {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+
+  &:not(:last-child) {
+    padding-bottom: 12px;
+  }
+
+  &:last-child {
+    margin-bottom: 32px;
+  }
+
+  @include sm-block {
+    font-size: 16px;
+    line-height: 120%;
+  }
+}
+
+.jobs__invitation {
+  background-color: $color_hero_bg;
+  padding: 32px 32px 36px 32px;
+
+  @include sm-block {
+    font-size: 20px;
+    line-height: 140%;
+    padding: 20px;
+  }
+  a,
+  span {
+    color: $color_secondary;
+  }
+}

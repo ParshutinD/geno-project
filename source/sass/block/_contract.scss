@@ -1,0 +1,39 @@
+.contract {
+  padding: 48px 0px 48px 48px;
+  background-color: $color_hero_bg;
+  margin-top: 93px;
+
+  @include sm-block {
+    padding: 14px 0px 15px 7px;
+  }
+}
+
+.contract__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 110%;
+  margin-bottom: 24px;
+}
+
+.contract__file {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+
+  &:not(:last-child) {
+    padding-bottom: 24px;
+  }
+
+  .contract__img {
+    width: 38px;
+    height: 38px;
+  }
+
+  a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    max-width: 299px;
+  }
+}

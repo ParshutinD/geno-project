@@ -1,0 +1,27 @@
+.program {
+  padding-bottom: 84px;
+}
+.program__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 110%;
+
+  @include sm-block {
+    font-size: 28px;
+  }
+}
+
+.program {
+  p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    max-width: 1220px;
+
+    &:not(:last-child) {
+      padding-bottom: 16px;
+    }
+  }
+}

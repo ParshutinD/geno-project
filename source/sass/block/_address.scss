@@ -1,0 +1,21 @@
+.address__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 160%;
+}
+
+.address {
+  p {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 160%;
+    max-width: 1345px;
+
+    &:not(:last-child) {
+      padding-bottom: 12px;
+    }
+  }
+  padding-bottom: 48px;
+}

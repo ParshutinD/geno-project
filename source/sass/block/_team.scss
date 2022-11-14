@@ -1,0 +1,96 @@
+.team {
+    padding: 42px 0;
+    &-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        @include sm-block {
+            position: relative;
+            flex-direction: column;
+            padding-bottom: 48px;
+        }
+    }
+    &__img {
+        width: calc(45% - 12px);
+        margin-right: 32px;
+        img {
+            width: 100%;
+            display: block;
+        }
+        @include sm-block {
+            max-width: 400px;
+            width: 100%;
+            margin: 0 auto 24px; 
+        }
+    }
+    &-documents {
+        width: calc(55% - 24px);
+        overflow: hidden;
+        img {
+            width: 100%;
+            display: block;
+        }
+        .swiper-pagination {
+            display: none;
+            bottom: 0;
+        }
+        @include sm-block {
+            width: 100%;
+            order: 10;
+            position: relative;
+            img {
+                width: auto;
+                max-height: 350px;
+                margin: 0 auto;
+            }
+            padding-bottom: 28px;
+            .swiper-pagination {
+                display: block;
+                &-bullet {
+                    width: 10px;
+                    height: 10px;
+                    background: transparent;
+                    border: 2px solid #C89354;
+                    &-active {
+                        background: #C89354;
+                    }
+                }
+            }
+        }
+    }
+    &-info {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 48px;
+        @include sm-block {
+            margin: 0 0 24px 0;
+        }
+    }
+    &__text {
+        max-width: 970px;
+        margin-right: 24px;
+    }
+    &__link {
+        white-space: nowrap;
+        width: auto;
+        display: inline-block;
+        color: $color_secondary;
+        border-bottom: 1px solid $color_secondary;
+        padding-bottom: 6.5px;
+        font-size: 16px;
+        line-height: 20px;
+        &:hover {
+            opacity: .7;
+        }
+        @include sm-block {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
+  

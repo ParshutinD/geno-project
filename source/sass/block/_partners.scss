@@ -1,0 +1,45 @@
+.partners {
+    padding: 42px 0 84px;
+    @include sm-block {
+        padding: 44px 0;
+    }
+    &-slider {
+        margin-bottom: 48px;
+        @include sm-block {
+            position: relative;
+            padding-bottom: 28px;
+            margin-bottom: 24px;
+            overflow: hidden;
+        }
+    }
+    &__item {
+        img {
+            width: 100%;
+            display: block;
+            margin-bottom: 24px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 22px;
+            font-weight: 700;
+        }
+        @include sm-block {
+            img {
+                width: auto;
+                margin: 0 auto 16px;
+            }
+        }
+    }
+    &__link {
+        max-width: 113px;
+        display: block;
+        margin: 0 auto;
+        color: $color_secondary;
+        border-bottom: 1px solid $color_secondary;
+        padding-bottom: 6.5px;
+        white-space: nowrap;
+        &:hover {
+            opacity: .7;
+        }
+    }
+}

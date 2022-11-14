@@ -1,0 +1,127 @@
+.hero {
+    background-color: $color_hero_bg;
+    & .container {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 65px;
+      @media(max-width: 1200px) {
+        align-items: center;
+      }
+      @media(max-width: 767px) {
+        flex-direction: column-reverse;
+      }
+    }
+  }
+  
+  .hero-wrapper {
+    max-width: 817px;
+    width: 100%;
+    @media (max-width: 1200px) {
+      width: 60%;
+      max-width: initial;
+    }
+    @media(max-width: 767px) {
+      width: 100%;
+    }
+  }
+  
+  .hero__title {
+    font-style: normal;
+    font-size: 64px;
+    line-height: 110%;
+    color: $color_red;
+    max-width: 817px;
+    padding-top: 160px;
+    padding-bottom: 45px;
+    @media (max-width: 1200px) {
+      font-size: 48px;
+      line-height: 1.4;
+    }
+    @media(max-width: 767px) {
+      padding: 44px 0 24px;
+      font-size: 32px;
+      line-height: 40px;
+    }
+    @media(max-width: 495px) {
+      font-size: 28px;
+      line-height: 32px;
+    }
+  }
+  
+  .hero__img {
+    padding-top: 60px;
+    max-width: 487px;
+    width: 100%;
+    img {
+      display: block;
+      width: 100%;
+    }
+    @include lg-block {
+      width: calc(40% - 24px);
+    }
+    @media(max-width: 767px) {
+      max-width: initial;
+      width: calc(100% + 40px);
+      margin-left: -20px;
+      margin-right: -20px;
+      background-color: #f4e7d9;
+      padding-bottom: 30px;
+      padding-top: 14px;
+      img {
+        max-width: 320px;
+        margin: 0 auto;
+      }
+    }
+  }
+  
+  .hero__name,
+  .hero__tel {
+    background-color: $color_white;
+    border: 1px solid $color_beige;
+    border-radius: 4px;
+    display: block;
+    width: 245px;
+    height: 52px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: $color_main_text;
+    padding-left: 18px;
+    margin-right: 15px;
+  
+    &::placeholder {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 100%;
+      color: $color_main_text;
+    }
+  }
+  
+  .hero__form {
+    & fieldset {
+      display: flex;
+    }
+    display: flex;
+    @media (max-width: 1024px) {
+      .form-row {
+        max-width: 400px;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .form__submit {
+        display: block;
+        width: 100%;
+      }
+    }
+    .form-item {
+      margin-bottom: 0;
+    }
+    @media(max-width: 767px) {
+      .form-row {
+        max-width: 100%;
+      }
+    }
+  }

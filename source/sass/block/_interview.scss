@@ -1,0 +1,47 @@
+
+.interview__title {
+    margin-bottom: 24px;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 110%;
+  
+    @include sm-block {
+      font-size: 28px;
+    }
+  }
+  
+  .interview__list {
+  
+  
+    @include sm-block {
+    
+    }
+  
+    & .interview__item {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140%;
+      color: $color_secondary;
+      position: relative;
+      padding-left: 25px;
+  
+      &::before {
+        content: "";
+        width: 13px;
+        height: 13px;
+        background-color: $color_point;
+        position: absolute;
+        left: 0px;
+        top: 5px;
+      }
+  
+      &:not(:last-child) {
+        padding-bottom: 16px;
+  
+        @include sm-block {
+          padding-bottom: 14px;
+        }
+      }
+    }
+  }
+  

@@ -1,0 +1,51 @@
+.pagination-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.pagination__item {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background-color: $color_sand;
+  border: none;
+  color: $color_white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 140%;
+
+  &--active {
+    background-color: $color_secondary;
+  }
+}
+
+.pagination__item-prew {
+  &::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: transparent;
+    border-radius: 1px;
+    transform: rotate(45deg);
+    border-bottom: 2px solid $color_white;
+    border-left: 2px solid $color_white;
+  }
+}
+
+.pagination__item-next {
+  &::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: transparent;
+    border-radius: 1px;
+    transform: rotate(-135deg);
+    border-bottom: 2px solid $color_white;
+    border-left: 2px solid $color_white;
+  }
+}

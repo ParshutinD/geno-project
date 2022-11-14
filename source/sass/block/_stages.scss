@@ -1,0 +1,76 @@
+.stages {
+    &__title {
+        margin-bottom: 48px;
+        font-size: 48px;
+        line-height: 52px;
+        font-weight: 400;
+        @include sm-block {
+            font-size: 28px;
+            line-height: 30px;
+            margin-bottom: 24px;
+            max-width: 330px;
+        }
+    }
+    &-slider {
+        position: relative;
+        overflow: hidden;
+        @include sm-block {
+            padding-bottom: 28px;
+        }
+    }
+    &__item {
+        position: relative;
+        
+        &::after {
+            content: url(../img/Arrow1.svg);
+            position: absolute;
+            top: 130px;
+            right: -80px;
+        }
+        &:nth-of-type(4)::after {
+            display: none;
+          }
+        
+        @media (max-width: 1600px) {
+        &::after {
+            display: none;
+        }
+        }
+        img {
+            max-width: 280px;
+            width: 100%;
+            display: block;
+            margin:0 0 24px auto;
+            @include sm-block {
+                max-width: 200px;
+                margin-bottom: 7px;
+            }
+        }
+        &-num {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 64px;
+            line-height: 100%;
+            color: transparent;
+            -webkit-text-stroke: 1px $color_red;
+            @include fonts-main;
+            margin:-40px 0 24px 0;
+            @include sm-block {
+                margin: -33px 0 26px 0;
+            }
+        }
+        &-title {
+            color: $color_secondary;
+            font-size: 16px;
+            line-height: 1;
+            margin-bottom: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            counter-reset: section;
+        }
+        &-desc {
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
+}

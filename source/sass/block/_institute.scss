@@ -1,0 +1,38 @@
+.institute_wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  @include md-block {
+    flex-direction: column;
+  }
+}
+
+.institute__info {
+  max-width: 845px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+
+  p:first-child {
+    padding-bottom: 32px;
+  }
+}
+
+.institute__name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  padding-bottom: 16px;
+}
+
+.institute__info-job {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 160%;
+
+  @include sm-block {
+    padding-bottom: 24px;
+  }
+}

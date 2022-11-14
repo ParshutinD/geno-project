@@ -1,0 +1,44 @@
+.news__date {
+  font-weight: bold;
+  padding-bottom: 24px;
+  @include sm-block {
+    padding-bottom: 24px;
+  }
+
+  h3 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+  }
+}
+
+.news__discription {
+  padding-bottom: 24px;
+  padding-top: 24px;
+  line-height: 160%;
+
+  @include sm-block {
+    padding-bottom: 12px;
+    padding-top: 12px;
+  }
+
+  span {
+    font-weight: bold;
+  }
+}
+
+.news__img-wrapper {
+  display: flex;
+  gap: 155px;
+  padding-bottom: 48px;
+
+  @include sm-block {
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 24px;
+  }
+
+  img {
+    padding-bottom: 24px;
+  }
+}

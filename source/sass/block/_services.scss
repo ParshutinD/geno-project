@@ -1,0 +1,153 @@
+.services {
+ 
+  &__slider {
+    @include sm-block {
+      padding: 10px 10px 28px 10px;
+      margin: -10px;
+      overflow: hidden;
+      position: relative;
+    }
+  }
+}
+
+.services__slide {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: calc(25% - 15px);
+  box-shadow: 0px 4px 35px rgba(0, 0, 0, 0.07);
+  cursor: pointer;
+  position: relative;
+
+  img {
+    width: 100%;
+  }
+
+  &:hover {
+    box-shadow: 0px 4px 35px rgba(0, 0, 0, 0.2);
+    .services__slide-info {
+      p {
+        opacity: 0.9;
+        transition: 0.5s;
+        transform: translateY(0);
+      }
+    }
+  }
+
+  @include md-block {
+    width: calc(33.3% - 15px);
+  }
+  @include sm-block {
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.07);
+  }
+}
+
+.services__slide-title {
+  min-height: 102px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+
+  h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $color_red;
+    flex-direction: column;
+    max-width: 284px;
+
+    & span {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      line-height: 25px;
+    }
+  }
+}
+
+.services__slide-info {
+  position: relative;
+  overflow: hidden;
+  p {
+    position: absolute;
+    height: 100%;
+    padding: 32px;
+    font-size: 16px;
+    line-height: 22px;
+    background: #fff3e8;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: 0.25s;
+  }
+}
+.services__slide-img {
+  img {
+    width: 100%;
+    display: block;
+  }
+}
+.services__slider-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+
+  @include sm-block {
+    gap: 0;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+}
+
+.services-page__title {
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 110%;
+
+  @include sm-block {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 110%;
+    text-align: start;
+    margin-right: 0;
+  }
+}
+
+.services-page__info {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  max-width: 1048px;
+  padding-bottom: 48px;
+}
+
+.sample__title {
+  text-align: center;
+  color: $color_black;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 110%;
+  max-width: 1018px;
+  margin: 0 auto;
+  padding-bottom: 48px;
+  @include sm-block {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 110%;
+    text-align: start;
+  }
+}

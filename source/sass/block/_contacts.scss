@@ -1,0 +1,52 @@
+.contacts__name-institute {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 160%;
+
+  &:not(:last-child) {
+    padding-bottom: 12px;
+  }
+
+  &:last-child {
+    padding-bottom: 41px;
+  }
+}
+
+.contacts__worker {
+  display: flex;
+  gap: 32px;
+
+  @include lg-block {
+    flex-direction: column;
+  }
+
+  &:not(:last-child) {
+    padding-bottom: 32px;
+  }
+
+ 
+
+  p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 160%;
+  }
+
+  a {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 160%;
+  }
+
+  p:not(:last-child) {
+    padding-bottom: 8px;
+  }
+
+  .contacts__worker-name {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 160%;
+  }
+}

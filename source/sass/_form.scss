@@ -1,0 +1,47 @@
+.form-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.form-item {
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.form__label {
+    display: none;
+}
+
+.form__input {
+    width: 100%;
+    font-size: 16px;
+    height: 52px;
+    line-height: 52px;
+    padding: 0 18px;
+    background: $color_white;
+    border: 1px solid #F4E7D9;
+    border-radius: 4px;
+    line-height: 24px;
+    @include fonts_main();
+    &::placeholder {
+        font-size: 16px;
+    }
+    &:focus::placeholder {
+        opacity: 0;
+    }
+}
+
+.form__textarea {
+    width: 100%;
+    font-size: 16px;
+    padding: 18px;
+    background: $color_white;
+    border: 1px solid #F4E7D9;
+    border-radius: 4px;
+    resize: none;
+    &::placeholder {
+        @include fonts_main();
+        font-size: 16px;
+    }
+}

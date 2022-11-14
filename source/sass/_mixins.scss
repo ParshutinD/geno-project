@@ -1,0 +1,27 @@
+@mixin fonts_main {
+  font-family: "OpenSans", "Tahoma", sans-serif;
+}
+
+@mixin lg-block() {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin md-block() {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin sm-block() {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin xs-block() {
+  @media (max-width: 495px) {
+    @content;
+  }
+}

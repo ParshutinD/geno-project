@@ -1,0 +1,39 @@
+.delivery {
+  p {
+    margin: 0 auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    text-align: center;
+    max-width: 1071px;
+
+    @include sm-block {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      text-align: start;
+    }
+
+    &:not(:last-child) {
+      padding-bottom: 24px;
+    }
+  }
+}
+
+.delivery__title {
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 110%;
+
+  @include sm-block {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 110%;
+    text-align: start;
+  }
+}

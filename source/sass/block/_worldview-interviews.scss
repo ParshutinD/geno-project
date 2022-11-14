@@ -1,0 +1,46 @@
+.worldview-interviews__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 110%;
+  padding-bottom: 48px;
+  text-align: center;
+
+  @include sm-block {
+    font-size: 28px;
+    padding-bottom: 24px;
+    text-align: start;
+  }
+}
+
+.worldview-interviews__slide {
+  background-color: $color_hero_bg;
+  max-width: 345px;
+  height: auto;
+  img {
+    padding-bottom: 24px;
+  }
+}
+
+.worldview-interviews__name {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  padding-bottom: 12px;
+  padding-left: 16px;
+}
+.worldview-interviews__discription {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  padding-left: 16px;
+  padding-bottom: 16px;
+}
+
+.worldview-interviews__slider-wrapper {
+display: flex;
+justify-content: space-between;
+padding-bottom: 25px;
+}

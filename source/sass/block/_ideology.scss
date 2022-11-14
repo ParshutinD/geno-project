@@ -1,0 +1,59 @@
+.ideology {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.ideology__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 110%;
+  text-align: center;
+}
+
+.ideology__quote {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  align-self: flex-end;
+  text-align: start;
+  padding-bottom: 24px;
+}
+
+.ideology__slider-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @include md-block {
+    flex-wrap: nowrap;
+    justify-content: initial;
+    padding-bottom: 25px;
+  }
+
+  @media (min-width: 1025px) {
+    gap: 30px;
+  }
+}
+
+.ideology__slide {
+  background-color: $color_hero_bg;
+  padding: 32px 0px 39px 81px;
+  max-width: 440px;
+  position: relative;
+  height: auto;
+  margin: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 48px;
+    background-image: url(../img/flag.svg);
+    top: -10px;
+    left: 10px;
+  }
+}

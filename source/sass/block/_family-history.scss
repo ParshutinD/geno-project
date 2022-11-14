@@ -1,0 +1,67 @@
+.family-history {
+  padding: 42px 0;
+  @include sm-block {
+    padding: 22px 0;
+  }
+}
+
+.family-history__subtitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  position: relative;
+  + .family-history__subtitle {
+    margin-top: 16px;
+  }
+}
+
+.family-history__wrapper {
+  position: relative;
+  overflow: hidden;
+
+  @include xs-block {
+    height: 168px;
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -2px;
+      height: 100%;
+      width: 100%;
+      background: linear-gradient(180deg, transparent 0%, #f8f0e9 100%);
+      z-index: 10;
+    }
+    &.active {
+      overflow: hidden;
+      height: auto;
+      padding-bottom: 30px;
+      &::before {
+        display: none;
+      }
+    }
+  }
+}
+
+.family-history__text-more {
+  display: none;
+
+  @include xs-block {
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 1px;
+    border: 3px solid $color_primary;
+    border-top: none;
+    border-right: none;
+    background-color: transparent;
+    bottom: 20px;
+    left: 50%;
+    transform: rotate(-45deg) translateX(-50%);
+    z-index: 11;
+  }
+}
+
+.family-history__text-more.js-show-text.active {
+  transform: rotate(135deg) translateX(100%);
+}

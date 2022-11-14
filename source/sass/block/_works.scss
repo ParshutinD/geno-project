@@ -1,0 +1,68 @@
+.works-title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 160%;
+  text-align: center;
+
+
+  @include sm-block {
+    padding-bottom: 24px;
+    text-align: start;
+    font-size: 16px;
+    margin: 0;
+  }
+}
+
+.works__item {
+  &-title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%;
+    color: $color_black;
+    margin-top: 16px;
+    margin-bottom: 12px;
+
+    @include sm-block {
+      margin-top: 10px;
+      margin-bottom: 6px;
+      font-size: 14px;
+    }
+  }
+
+  &-link {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 120%;
+    color: $color_secondary;
+    text-decoration: underline;
+  }
+}
+
+.works-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding-bottom: 67px;
+}
+
+.works {
+  & .btn {
+    display: block;
+    margin: 0 auto;
+
+  }
+}
+
+.our-services__title {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 110%;
+  color: $color_secondary;
+
+  @include sm-block {
+    font-size: 28px;
+  }
+}
+

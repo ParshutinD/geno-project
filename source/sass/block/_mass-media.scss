@@ -1,0 +1,119 @@
+.mass-media__slide {
+  max-width: 345px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 16px;
+  background-color: $color_hero_bg;
+  height: auto;
+
+  .mass-media__slide-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 24px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+  }
+}
+
+.mass-media__slider-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mass-media__slide-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 16px;
+
+  &::before {
+    content: "";
+    width: 48px;
+    height: 48px;
+    background-image: url(../../img/play-circle.svg);
+    position: absolute;
+    cursor: pointer;
+  }
+}
+
+.mass-media__discription {
+  padding-left: 16px;
+  padding-right: 16px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+.mass-media {
+  h3 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 110%;
+    padding-bottom: 32px;
+
+    @include sm-block {
+      font-size: 22px;
+      line-height: 115%;
+      padding-bottom: 14px;
+    }
+  }
+}
+
+.mass-media__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 110%;
+  text-align: center;
+
+  @include sm-block {
+    text-align: start;
+    font-size: 28px;
+  }
+}
+
+.mass-media__list {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+
+  @include md-block {
+    flex-direction: column;
+  }
+}
+
+.mass-media__item {
+  background-color: $color_hero_bg;
+  padding: 32px 86px 32px 32px;
+  box-shadow: 0px 4px 35px rgba(0, 0, 0, 0.07);
+}
+
+.mass-media__date {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  padding-bottom: 12px;
+}
+
+.mass-media__name {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 140%;
+  padding-bottom: 16px;
+}
+
+.mass-media__info {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  padding-bottom: 24px;
+  max-width: 602px;
+}

@@ -1,0 +1,105 @@
+.training {
+  @include lg-block {
+    background-color: $color_hero_bg;
+  }
+  & .container {
+    padding-bottom: 85px;
+
+    @include sm-block {
+      padding-bottom: 44px;
+    }
+  }
+}
+
+.training__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 110%;
+  padding-bottom: 50px;
+
+  @include sm-block {
+    font-size: 28px;
+    padding-bottom: 22px;
+  }
+
+  @include lg-block {
+    padding-top: 44px;
+  }
+}
+
+.training__wrapper {
+  display: flex;
+  align-items: center;
+  background-color: $color_hero_bg;
+  justify-content: space-between;
+
+   img {
+    max-width: 600px;
+    
+  }
+
+  @include lg-block {
+    flex-direction: column;
+    align-items: center;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.training__inner-wrapper {
+  padding-left: 125px;
+
+  @include lg-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+  }
+}
+
+.training__subtitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  max-width: 595px;
+  padding-bottom: 32px;
+
+  @include sm-block {
+    font-size: 16px;
+  }
+}
+
+.training__btn-wrapper {
+  display: flex;
+
+  @include lg-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+}
+
+.btn.training__btn--class {
+  margin-right: 15px;
+
+  background-color: transparent;
+  color: $color_brown;
+  border: 1px solid $color_brown;
+
+  @include lg-block {
+    margin-right: 0px;
+  }
+}
+
+.btn.training__btn--get {
+  background-color: $color_brown;
+
+  @include lg-block {
+    margin-bottom: 34px;
+  }
+}

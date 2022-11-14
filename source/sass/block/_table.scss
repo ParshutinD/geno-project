@@ -1,0 +1,36 @@
+.table-scroll {
+  overflow-y: auto;
+}
+
+.table {
+  border-spacing: 0px 4px;
+  overflow-y: auto;
+  width: 1510px;
+
+  th {
+    background-color: $color_table;
+    padding: 22px 55px 22px 32px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    text-align: start;
+    &:first-child {
+      width: 600px;
+    }
+  }
+
+  td {
+    background-color: $color_beige;
+    padding: 22px 111px 22px 32px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 160%;
+    text-align: start;
+
+    span {
+      color: $color_secondary;
+    }
+  }
+}

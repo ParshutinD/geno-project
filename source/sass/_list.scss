@@ -1,0 +1,38 @@
+.list {
+  padding-bottom: 64px;
+
+  @include sm-block {
+    padding-bottom: 44px;
+  }
+
+  .item {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: $color_secondary;
+    position: relative;
+    padding-left: 25px;
+
+    &--black {
+      color: $color_main_text;
+    }
+
+    &::before {
+      content: "";
+      width: 13px;
+      height: 13px;
+      background-color: $color_point;
+      position: absolute;
+      left: 0px;
+      top: 5px;
+    }
+
+    &:not(:last-child) {
+      padding-bottom: 16px;
+
+      @include sm-block {
+        padding-bottom: 14px;
+      }
+    }
+  }
+}

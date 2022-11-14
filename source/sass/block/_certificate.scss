@@ -1,0 +1,27 @@
+.certificate__slider-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 18px;
+}
+
+.certificate__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 110%;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 48px;
+
+  @include sm-block {
+    font-size: 28px;
+    text-align: start;
+    margin: 0;
+    padding-bottom: 20px;
+  }
+}
+
+.certificate__slide {
+ text-align: center;
+}
