@@ -43,6 +43,7 @@
   align-items: center;
   justify-content: center;
   padding-bottom: 64px;
+ 
 
   @include sm-block {
     row-gap: 15px;
@@ -56,6 +57,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  margin: 0;
 
   & svg {
     margin-right: 15px;

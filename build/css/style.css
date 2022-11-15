@@ -618,7 +618,8 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative; }
+  position: relative;
+  margin: 0; }
   .btn.about__btn svg {
     margin-right: 15px;
     width: 32px;
